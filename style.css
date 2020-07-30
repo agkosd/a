@@ -37,8 +37,6 @@ h2{
 
 img{
 	max-width: 100%;
-	
-	border:1px solid black;
 }
 
 
@@ -48,6 +46,7 @@ img{
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
+	flex-flow:row wrap;
 }
 
 #navbar h1{
@@ -62,6 +61,7 @@ img{
 	flex-flow:row wrap;
 	justify-content: flex-end;
 	align-items: center;
+
 }
 
 #navbar li a{
@@ -130,6 +130,12 @@ img{
 	padding: 1vw;
 }
 
+#projects > h2{
+	margin-bottom: 3rem;
+	color:#404040;
+	font-weight:300 ;
+
+}
 
 .project-tile{
 	display: flex;
@@ -196,11 +202,6 @@ img{
 	transform: translateY(0.5rem);
 }
 
-
-
-
-
-
 #footer
 {
 	flex-shrink: 0;
@@ -224,4 +225,105 @@ img{
 
 	color: black;
 	transition-duration:1s;
+}
+hr{
+	display:none;
+}
+
+.container{
+	display: none;
+}
+
+@media screen and (max-width:768px)
+{
+
+	#navbar, #navbar ul{
+		display: flex;
+		flex-direction: column;
+		padding:0;
+	}
+
+	#navbar{
+		width: 100vw;
+		padding:0px;
+		align-items: stretch;
+	}
+
+	#navbar h1{
+		padding:0;
+		margin:1rem;
+	}	
+	#navbar ul{
+		align-items: stretch;
+		}
+
+	#navbar h1,#navbar ul{
+		text-align: center;
+	}
+
+	#navbar li a:hover{
+		background-color:#707070;
+	}
+
+	#navbar li a{
+		margin:0px;
+		width: 100%;
+		padding:1rem 0;
+	}
+	
+	.hid li{
+		display:none;
+	}
+	header a{
+		color:white;
+	}
+	header{
+		background-color: #404040;
+		margin:.1em;
+	}
+	
+	.top-nav{
+		width: 100vw;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #ccc;
+	}
+	.container{
+		margin-left: 10px;
+		left:5px;
+		display: inline-block;
+	}
+	.hamburger{
+		width:35px;
+		height:5px;
+		background-color: white;
+		margin:6px 6px;
+		transition:0.4s;
+	}
+	.container:hover{
+		cursor: pointer;
+	}
+	.show li{
+		border-bottom: 1px solid #ccc;
+		width:100vw;
+	}
+	.show{
+		display: block;
+	}
+	.show .bar1{
+  		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  		transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+	.show .bar2{
+		opacity: 0;
+	}
+	.show .bar3{
+		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  		transform: rotate(45deg) translate(-8px, -8px) ;
+
+	}
+
+	
 }

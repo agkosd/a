@@ -46,3 +46,20 @@ function init(){
 	new TypeWriter(txtElement, words, wait);
 
 }
+
+// hamburger menu animation
+
+const ham = document.querySelector('.container');
+const bar1 = document.querySelector('.bar1');
+const bar2 = document.querySelector('.bar2');
+const bar3 = document.querySelector('.bar3');
+const ul = document.querySelector('ul');
+ham.addEventListener('click',(e)=>{
+	ham.classList.toggle('show');
+	bar1.classList.toggle('show');
+	bar2.classList.toggle('show');
+	bar3.classList.toggle('show');
+		ul.classList.add('show');
+		ul.classList.toggle('hid');
+
+});
