@@ -36,6 +36,7 @@ h2{
 }
 
 img{
+	max-height: 100%;
 	max-width: 100%;
 }
 
@@ -122,7 +123,7 @@ img{
 
 #projects ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 	grid-gap: 20px;
 }
 
@@ -278,8 +279,8 @@ hr{
 		color:white;
 	}
 	header{
-		background-color: #404040;
-		margin:.1em;
+		background-color: black;
+		margin:0;
 	}
 	
 	.top-nav{
@@ -297,7 +298,7 @@ hr{
 	}
 	.hamburger{
 		width:35px;
-		height:5px;
+		height:3px;
 		background-color: white;
 		margin:6px 6px;
 		transition:0.4s;
@@ -314,14 +315,14 @@ hr{
 	}
 	.show .bar1{
   		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  		transform: rotate(-45deg) translate(-9px, 6px) ;
+  		transform: rotate(-45deg) translate(-9px,7px);
 	}
 	.show .bar2{
 		opacity: 0;
 	}
 	.show .bar3{
 		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  		transform: rotate(45deg) translate(-8px, -8px) ;
+  		transform: rotate(45deg) translate(-6px,-4.7px) ;
 
 	}
 
