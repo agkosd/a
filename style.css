@@ -141,7 +141,13 @@ hr {
 }
 
 #projects li {
-  padding: 1vw;
+  padding: 0.1vw;
+  background-color: #f7f7f7;
+}
+
+#projects li a {
+  margin: 10px;
+  padding: 0;
 }
 
 #projects > h2 {
@@ -151,7 +157,7 @@ hr {
 }
 
 #projects img {
-  margin: 0 auto;
+  margin: 0;
   height: 400px;
   width: 400px;
   max-width: 100%;
